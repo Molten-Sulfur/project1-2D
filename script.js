@@ -31,6 +31,8 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], (Map, Ma
   //Add the sites
   const featureLayer2 = new FeatureLayer({
   url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/WASH_sites/FeatureServer",
+    popupTemplate: {title:"{Description}"      
+    },
     renderer: {
       type: "simple",
       symbol: {
